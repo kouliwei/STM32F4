@@ -35,6 +35,7 @@ typedef struct{
 #include "motor.h"
 #include "slidingmode.h"
 #include "adc.h"
+#include "gps.h"  
 
 
 extern	uint8_t ID;

@@ -17,8 +17,6 @@ void USER_ADC_Init(void)
 	ADC_GPIO_Configuration();
 	ADC3_Init();
 	ADCInit_DMA();
- 
-
 }
 
 

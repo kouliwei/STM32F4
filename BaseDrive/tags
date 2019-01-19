@@ -1,0 +1,308 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+ADC3_Init	.\adc.c	/^void ADC3_Init(void)$/;"	f
+ADCInit_DMA	.\adc.c	/^static void ADCInit_DMA(void)$/;"	f	file:
+ADC_GPIO_Configuration	.\adc.c	/^void ADC_GPIO_Configuration(void)        \/\/ADC????$/;"	f
+ADC_H_	.\adc.h	9;"	d
+ADDR_24LC02	.\i2c.h	17;"	d
+ARRAY_SIZE	.\packet.c	9;"	d	file:
+Advance_Control	.\motor.c	/^static void Advance_Control(void)$/;"	f	file:
+Back_Control	.\motor.c	/^static void Back_Control(void)$/;"	f	file:
+CH_ERR	.\packet.c	17;"	d	file:
+CH_OK	.\packet.c	13;"	d	file:
+COMMON_H	.\common.h	9;"	d
+Chip	.\SST25VF016B.h	/^typedef enum ERTYPE{Sec1,Sec8,Sec16,Chip} ErType;  $/;"	e	enum:ERTYPE
+ChipID	.\SST25VF016B.c	/^uint32_t  ChipID = 0;$/;"	v
+Circle_Led	.\led.c	/^extern void Circle_Led(void)$/;"	f
+CurReadAddr	.\FlashDriver.c	/^static uint32_t CurReadAddr;	\/* 当前读的地址 *\/$/;"	v	file:
+CurWriteAddr	.\FlashDriver.c	/^static uint32_t CurWriteAddr;	\/* 当前写页地址	*\/$/;"	v	file:
+CurrentBuffPtr	.\adc.c	/^uint16_t CurrentBuffPtr = 0;$/;"	v
+DataInter_AHRS	.\usart.c	/^extern void DataInter_AHRS(void)$/;"	f
+DataInter_Pc	.\usart.c	/^extern void DataInter_Pc(void)$/;"	f
+Delay_1ms	.\led.c	/^void Delay_1ms(void)$/;"	f
+Delay_Nms	.\led.c	/^void Delay_Nms(uint16_t i)$/;"	f
+Depth_Control	.\motor.c	/^static int Depth_Control(void) $/;"	f	file:
+Dev_ID	.\SST25VF016B.h	/^typedef enum IDTYPE{Manu_ID,Dev_ID,Jedec_ID} idtype;$/;"	e	enum:IDTYPE
+Down_Control	.\motor.c	/^static void Down_Control(void)$/;"	f	file:
+EPwmRead	.\timer.c	/^uint16_t EPwmRead(uint8_t i)$/;"	f
+EPwmSetup1	.\timer.c	/^void EPwmSetup1(uint16_t duty11)$/;"	f
+EPwmSetup2	.\timer.c	/^void EPwmSetup2(uint16_t duty22)$/;"	f
+EPwmSetup3	.\timer.c	/^void EPwmSetup3(uint16_t duty33)$/;"	f
+EPwmSetup4	.\timer.c	/^void EPwmSetup4(uint16_t duty44)$/;"	f
+EPwm_Init	.\timer.c	/^extern void  EPwm_Init(void)$/;"	f
+ERTYPE	.\SST25VF016B.h	/^typedef enum ERTYPE{Sec1,Sec8,Sec16,Chip} ErType;  $/;"	g
+ErType	.\SST25VF016B.h	/^typedef enum ERTYPE{Sec1,Sec8,Sec16,Chip} ErType;  $/;"	t	typeref:enum:ERTYPE
+EventHandler	.\packet.c	/^static OnDataReceivedEvent EventHandler;$/;"	v	file:
+Flash_ReadWriteByte	.\SST25VF016B.c	/^uint8_t Flash_ReadWriteByte(uint8_t data)		$/;"	f
+Forcex_Change	.\motor.c	/^static int	Forcex_Change(uint8_t s)$/;"	f	file:
+Forcez_Change	.\motor.c	/^static int	Forcez_Change(uint8_t s)$/;"	f	file:
+Game_Over	.\test.c	/^static void Game_Over(void)$/;"	f	file:
+Game_Over_Led	.\test.c	/^static void Game_Over_Led(void)$/;"	f	file:
+Game_Over_Pwm	.\test.c	/^static void Game_Over_Pwm(void)$/;"	f	file:
+I2C_Ack	.\i2c.c	/^void I2C_Ack(void)$/;"	f
+I2C_Configuration	.\i2c.c	/^void I2C_Configuration(void)$/;"	f
+I2C_NoAck	.\i2c.c	/^ void I2C_NoAck(void)$/;"	f
+I2C_PageSize	.\i2c.h	14;"	d
+I2C_ReadLenByte	.\i2c.c	/^void I2C_ReadLenByte(uint16_t ReadAddr, uint8_t *pBuffer,uint16_t NumToRead)$/;"	f
+I2C_ReadOneByte	.\i2c.c	/^uint8_t I2C_ReadOneByte(uint16_t ReadAddress)$/;"	f
+I2C_ReceiveByte	.\i2c.c	/^uint8_t I2C_ReceiveByte(void)  $/;"	f
+I2C_SendByte	.\i2c.c	/^ void I2C_SendByte(uint8_t SendByte) $/;"	f
+I2C_Start	.\i2c.c	/^ void I2C_Start(void)$/;"	f
+I2C_Stop	.\i2c.c	/^ void I2C_Stop(void)$/;"	f
+I2C_Test	.\i2c.c	/^uint8_t I2C_Test(void)$/;"	f
+I2C_WaitAck	.\i2c.c	/^ uint8_t I2C_WaitAck(void) 	$/;"	f
+I2C_WriteLenByte	.\i2c.c	/^void I2C_WriteLenByte(uint16_t WriteAddr, uint8_t *pBuffer, uint16_t NumToWrite)$/;"	f
+I2C_WriteOneByte	.\i2c.c	/^uint8_t I2C_WriteOneByte(uint16_t WriteAddr,uint8_t DataToWrite)$/;"	f
+I2C_delay	.\i2c.c	/^void I2C_delay(u16 nCount)$/;"	f
+I2C_delayms	.\i2c.c	/^void I2C_delayms(u16 nCount)$/;"	f
+IDTYPE	.\SST25VF016B.h	/^typedef enum IDTYPE{Manu_ID,Dev_ID,Jedec_ID} idtype;$/;"	g
+ItemID_t	.\packet.h	/^}ItemID_t;$/;"	t	typeref:enum:__anon1
+Jedec_ID	.\SST25VF016B.h	/^typedef enum IDTYPE{Manu_ID,Dev_ID,Jedec_ID} idtype;$/;"	e	enum:IDTYPE
+LED0_OFF	.\led.h	11;"	d
+LED0_ON	.\led.h	10;"	d
+LED0_TOG	.\led.h	12;"	d
+LED1_OFF	.\led.h	15;"	d
+LED1_ON	.\led.h	14;"	d
+LED1_TOG	.\led.h	16;"	d
+LED2_OFF	.\led.h	20;"	d
+LED2_ON	.\led.h	19;"	d
+LED2_TOG	.\led.h	21;"	d
+LED3_OFF	.\led.h	24;"	d
+LED3_ON	.\led.h	23;"	d
+LED3_TOG	.\led.h	25;"	d
+LED_Init	.\led.c	/^void LED_Init(void)$/;"	f
+Led_Driver	.\led.c	/^void Led_Driver(uint8_t i)$/;"	f
+Led_Mode1	.\test.c	/^void Led_Mode1()$/;"	f
+Led_Mode2	.\test.c	/^void Led_Mode2()$/;"	f
+Led_Test	.\test.c	/^static void Led_Test(void)$/;"	f	file:
+Left_Control	.\motor.c	/^static void Left_Control(void)$/;"	f	file:
+MAX_ADDR	.\SST25VF016B.h	37;"	d
+MAX_PACKET_LEN	.\packet.h	7;"	d
+MAX_YAWF	.\motor.h	11;"	d
+MIN_YAWF	.\motor.h	12;"	d
+MOTOR_H	.\motor.h	2;"	d
+MOTOR_STOP	.\motor.c	/^void MOTOR_STOP(void)$/;"	f
+Manu_ID	.\SST25VF016B.h	/^typedef enum IDTYPE{Manu_ID,Dev_ID,Jedec_ID} idtype;$/;"	e	enum:IDTYPE
+Motion_Control	.\motor.c	/^extern void Motion_Control(void)$/;"	f
+Motion_Type	.\motor.c	/^extern void Motion_Type(void)$/;"	f
+Motor14_RelayOn	.\motor.c	/^void Motor14_RelayOn(void)$/;"	f
+Motor23_RelayOn	.\motor.c	/^void Motor23_RelayOn(void)$/;"	f
+Motor_InitSet	.\motor.c	/^void Motor_InitSet(void)$/;"	f
+My_RTC_Init	.\rtc.c	/^u8 My_RTC_Init(void)$/;"	f
+NVIC_Config	.\led.c	/^void NVIC_Config(void)$/;"	f
+NVIC_InitStructure	.\rtc.c	/^NVIC_InitTypeDef   NVIC_InitStructure;$/;"	v
+Num_Change	.\motor.c	/^static uint16_t Num_Change(uint16_t s,uint8_t n)$/;"	f	file:
+OnDataReceived	.\imu_data_decode.c	/^static void OnDataReceived(Packet_t *pkt)$/;"	f	file:
+OnDataReceivedEvent	.\packet.h	/^typedef void (*OnDataReceivedEvent)(Packet_t *pkt);$/;"	t
+PC_ReadVol	.\adc.c	/^void PC_ReadVol(void)$/;"	f
+PUTCHAR_PROTOTYPE	.\usart.c	7;"	d	file:
+PUTCHAR_PROTOTYPE	.\usart.c	9;"	d	file:
+PWM_BACK_MAX	.\timer.h	14;"	d
+PWM_FORWARD_MAX	.\timer.h	13;"	d
+PWM_STOP	.\timer.h	12;"	d
+Packet_AddData	.\packet.c	/^uint32_t Packet_AddData(Packet_t *pkt, uint8_t *buf, uint16_t len)$/;"	f
+Packet_Begin	.\packet.c	/^uint32_t Packet_Begin(Packet_t *pkt)$/;"	f
+Packet_CreatePing	.\packet.c	/^uint32_t Packet_CreatePing(Packet_t *pkt)$/;"	f
+Packet_CreatePingAck	.\packet.c	/^uint32_t Packet_CreatePingAck(Packet_t *pkt, uint8_t major, uint8_t minor, uint8_t bugfix, uint16_t option)$/;"	f
+Packet_Decode	.\packet.c	/^uint32_t Packet_Decode(uint8_t c)$/;"	f
+Packet_DecodeInit	.\packet.c	/^void Packet_DecodeInit(Packet_t *pkt, OnDataReceivedEvent Func)$/;"	f
+Packet_Final	.\packet.c	/^uint32_t Packet_Final(Packet_t *pkt)$/;"	f
+Packet_t	.\packet.h	/^}Packet_t;$/;"	t	typeref:struct:__anon2
+Para_Init	.\common.c	/^extern void Para_Init(void)$/;"	f
+Pwm_Test	.\test.c	/^static void Pwm_Test()$/;"	f	file:
+RCC_APB2Periph_GPIO_SPI_FLASH_CS	.\SST25VF016B.h	42;"	d
+RTC_Alarm_IRQHandler	.\rtc.c	/^void RTC_Alarm_IRQHandler(void)$/;"	f
+RTC_Set_AlarmA	.\rtc.c	/^void RTC_Set_AlarmA(u8 week,u8 hour,u8 min,u8 sec)$/;"	f
+RTC_Set_Date	.\rtc.c	/^ErrorStatus RTC_Set_Date(u8 year,u8 month,u8 date,u8 week)$/;"	f
+RTC_Set_Time	.\rtc.c	/^ErrorStatus RTC_Set_Time(u8 hour,u8 min,u8 sec,u8 ampm)$/;"	f
+RTC_Set_WakeUp	.\rtc.c	/^void RTC_Set_WakeUp(u32 wksel,u16 cnt)$/;"	f
+RTC_WKUP_IRQHandler	.\rtc.c	/^void RTC_WKUP_IRQHandler(void)$/;"	f
+RX_BUFFER_SIZE	.\user.h	13;"	d
+Ref_Depth	.\motor.c	/^uint16_t Ref_Depth = 0;$/;"	v
+Ref_Speed	.\motor.c	/^uint16_t Ref_Speed = 0;$/;"	v
+Ref_Yaw	.\motor.c	/^float Ref_Yaw = 0;$/;"	v
+Relay1_Off	.\led.h	29;"	d
+Relay1_On	.\led.h	28;"	d
+Relay1_TOG	.\led.h	30;"	d
+Relay2_Off	.\led.h	35;"	d
+Relay2_On	.\led.h	34;"	d
+Relay2_TOG	.\led.h	36;"	d
+Relay3_Off	.\led.h	40;"	d
+Relay3_On	.\led.h	39;"	d
+Relay3_TOG	.\led.h	41;"	d
+Relay4_Off	.\led.h	45;"	d
+Relay4_On	.\led.h	44;"	d
+Relay4_TOG	.\led.h	46;"	d
+Relay_Init	.\led.c	/^void Relay_Init(void)$/;"	f
+Right_Control	.\motor.c	/^static void Right_Control(void)$/;"	f	file:
+RxPkt	.\imu_data_decode.c	/^static Packet_t RxPkt; \/* used for data receive *\/$/;"	v	file:
+RxPkt	.\packet.c	/^static Packet_t *RxPkt;$/;"	v	file:
+SCI_Return	.\test.c	/^static uint8_t SCI_Return(void)$/;"	f	file:
+SCL_H	.\i2c.h	5;"	d
+SCL_L	.\i2c.h	6;"	d
+SCL_read	.\i2c.h	11;"	d
+SDA_H	.\i2c.h	8;"	d
+SDA_IN	.\i2c.h	15;"	d
+SDA_L	.\i2c.h	9;"	d
+SDA_OUT	.\i2c.h	16;"	d
+SDA_read	.\i2c.h	12;"	d
+SEC_MAX	.\SST25VF016B.h	38;"	d
+SEC_SIZE	.\SST25VF016B.h	39;"	d
+SLiding_Para	.\user.h	/^}SLiding_Para;\/\/???????$/;"	t	typeref:struct:__anon3
+SPI_FALSH_CS_PIN	.\SST25VF016B.h	44;"	d
+SPI_FALSH_CS_PORT	.\SST25VF016B.h	43;"	d
+SPI_FLASH_CS_HIGH	.\SST25VF016B.h	47;"	d
+SPI_FLASH_CS_LOW	.\SST25VF016B.h	46;"	d
+SPI_FLASH_Init	.\SST25VF016B.c	/^void SPI_FLASH_Init(void)$/;"	f
+SPI_FLASH_Test	.\SST25VF016B.c	/^void SPI_FLASH_Test(void)$/;"	f
+SSTF016B_Erase	.\SST25VF016B.c	/^uint8_t SSTF016B_Erase(uint32_t sec1, uint32_t sec2)$/;"	f
+SSTF016B_RD	.\SST25VF016B.c	/^uint8_t SSTF016B_RD(uint32_t Dst, uint8_t* RcvBufPt ,uint32_t NByte)$/;"	f
+SSTF016B_RdID	.\SST25VF016B.c	/^uint8_t SSTF016B_RdID(idtype IDType,uint32_t* RcvbufPt)$/;"	f
+SSTF016B_WR	.\SST25VF016B.c	/^uint8_t SSTF016B_WR(uint32_t Dst, uint8_t* SndbufPt,uint32_t NByte)$/;"	f
+Saturation	.\motor.c	/^static void Saturation(uint16_t *temp,uint16_t min,uint16_t max)$/;"	f	file:
+SciGPS_Init	.\usart.c	/^static void SciGPS_Init(void)$/;"	f	file:
+Sci_Init	.\usart.c	/^extern void Sci_Init()$/;"	f
+Scia_Init	.\usart.c	/^static void Scia_Init(void)$/;"	f	file:
+Scib_Init	.\usart.c	/^static void Scib_Init(void)$/;"	f	file:
+Scib_Msg	.\usart.c	/^extern void Scib_Msg(char * msg)$/;"	f
+Scib_Xmit	.\usart.c	/^extern void Scib_Xmit(uint8_t a)$/;"	f
+Scic_Init	.\usart.c	/^static void Scic_Init(void)$/;"	f	file:
+Scid_Init	.\usart.c	/^static void Scid_Init(void)$/;"	f	file:
+Sec1	.\SST25VF016B.h	/^typedef enum ERTYPE{Sec1,Sec8,Sec16,Chip} ErType;  $/;"	e	enum:ERTYPE
+Sec16	.\SST25VF016B.h	/^typedef enum ERTYPE{Sec1,Sec8,Sec16,Chip} ErType;  $/;"	e	enum:ERTYPE
+Sec8	.\SST25VF016B.h	/^typedef enum ERTYPE{Sec1,Sec8,Sec16,Chip} ErType;  $/;"	e	enum:ERTYPE
+Send_Data	.\usart.c	/^extern void Send_Data(void)$/;"	f
+Send_Datatest	.\usart.c	/^extern void Send_Datatest(void)$/;"	f
+Send_SingleSensor	.\usart.c	/^extern void Send_SingleSensor(void)$/;"	f
+Send_TimeOver	.\usart.c	/^extern void Send_TimeOver(void)$/;"	f
+Send_VoltageAlert	.\usart.c	/^extern void Send_VoltageAlert(void)$/;"	f
+Set_PID	.\motor.c	/^extern void Set_PID(void)$/;"	f
+Set_SlidingPara	.\slidingmode.c	/^extern void Set_SlidingPara(void)$/;"	f
+ShangYang_Control	.\motor.c	/^static void ShangYang_Control(void)$/;"	f	file:
+SingleMotor_Control	.\motor.c	/^extern void SingleMotor_Control(void)$/;"	f
+Stop_Control	.\motor.c	/^static void Stop_Control(void) \/\/force to stop the AUV, and reset the relevant flags and variants.$/;"	f	file:
+Store_Data	.\motor.c	/^extern void Store_Data(void)$/;"	f
+Store_Data1	.\motor.c	/^extern void Store_Data1(void)$/;"	f
+Store_Data2	.\motor.c	/^extern void Store_Data2(void)$/;"	f
+Store_PcData	.\common.c	/^extern void Store_PcData(uint16_t* Data_To,uint16_t* Data2_From)$/;"	f
+Store_SensorData	.\common.c	/^extern void Store_SensorData(void)$/;"	f
+SystemInitUser	.\led.c	/^void SystemInitUser(void)$/;"	f
+T	.\slidingmode.c	/^volatile float T[4]={0,0,0,0}; \/\/????$/;"	v
+TEST_H	.\test.h	9;"	d
+TIM2_Configuration	.\adc.c	/^void TIM2_Configuration(void)$/;"	f
+TIM3_IRQHandler	.\timer.c	/^void TIM3_IRQHandler(void)$/;"	f
+TIM4PSC	.\timer.h	9;"	d
+TIM4Period	.\timer.h	10;"	d
+TIM4_IRQHandler	.\timer.c	/^void TIM4_IRQHandler(void)$/;"	f
+Test	.\test.c	/^extern void Test(void)$/;"	f
+Timer_Init	.\timer.c	/^void Timer_Init(void)$/;"	f
+TotalMotor_Control	.\motor.c	/^extern void TotalMotor_Control(void)$/;"	f
+UART4_IRQHandler	.\usart.c	/^void UART4_IRQHandler(void)$/;"	f
+UART_Send	.\usart.c	/^extern void UART_Send(void)$/;"	f
+UART_SendDis	.\usart.c	/^extern void UART_SendDis(void)$/;"	f
+UART_SendSensor	.\usart.c	/^extern void UART_SendSensor(void)$/;"	f
+USART1_IRQHandler	.\usart.c	/^void USART1_IRQHandler(void)$/;"	f
+USART2_IRQHandler	.\usart.c	/^void USART2_IRQHandler(void)$/;"	f
+USART6_IRQHandler	.\usart.c	/^void USART6_IRQHandler(void)$/;"	f
+USART_Baud	.\usart.h	7;"	d
+USER_ADC_Init	.\adc.c	/^void USER_ADC_Init(void)$/;"	f
+USER_H	.\user.h	2;"	d
+USER_SLIDING_H_	.\slidingmode.h	9;"	d
+Up_Control	.\motor.c	/^static void Up_Control(void)$/;"	f	file:
+VOLTAGE_RATE1	.\timer.c	112;"	d	file:
+VOLTAGE_RATE2	.\timer.c	113;"	d	file:
+Voltage	.\adc.c	/^uint8_t Voltage[4]={0,0,0,0};$/;"	v
+Voltage_Storage	.\timer.c	/^void Voltage_Storage(void)$/;"	f
+XiaYang_Control	.\motor.c	/^static void XiaYang_Control(void)    \/\/?????????yaw???$/;"	f	file:
+XiangyangParastore	.\motor.c	/^void XiangyangParastore(void)$/;"	f
+Yaw_Control	.\motor.c	/^static int Yaw_Control(void)$/;"	f	file:
+_LED_H_	.\led.h	2;"	d
+__FLASHDRIVER_H	.\FlashDriver.h	25;"	d
+__I2C_H	.\i2c.h	2;"	d
+__IMU_DATA_DECODE_H__	.\imu_data_decode.h	2;"	d
+__PACKET_H__	.\packet.h	2;"	d
+__RTC_H	.\rtc.h	2;"	d
+__SST25VF016B_H	.\SST25VF016B.h	26;"	d
+__TIMER_H	.\timer.h	2;"	d
+__USART_H	.\usart.h	2;"	d
+acc	.\imu_data_decode.c	/^static int16_t acc[3];$/;"	v	file:
+buf	.\packet.h	/^    uint8_t buf[MAX_PACKET_LEN];    \/* total frame buffer *\/$/;"	m	struct:__anon2
+crc16_update	.\packet.c	/^static void crc16_update(uint16_t *currectCrc, const uint8_t *src, uint32_t lengthInBytes)$/;"	f	file:
+data	.\user.h	/^	int8_t data[11];$/;"	m	struct:__anon3
+data1	.\user.h	/^	int data1[3];$/;"	m	struct:__anon3
+debug	.\motor.c	/^float debug = 0.0;$/;"	v
+df_read	.\FlashDriver.c	/^void df_read(uint8_t *buf,uint16_t size)$/;"	f
+df_read_close	.\FlashDriver.c	/^void df_read_close(void)$/;"	f
+df_read_open	.\FlashDriver.c	/^void df_read_open(uint32_t addr)$/;"	f
+df_read_seek	.\FlashDriver.c	/^void df_read_seek(uint32_t addr)$/;"	f
+df_write	.\FlashDriver.c	/^void df_write(uint8_t *buf,uint16_t size)$/;"	f
+df_write_close	.\FlashDriver.c	/^void df_write_close(void)$/;"	f
+df_write_open	.\FlashDriver.c	/^void df_write_open(uint32_t addr)$/;"	f
+df_write_seek	.\FlashDriver.c	/^void df_write_seek(uint32_t addr)$/;"	f
+error_sum	.\motor.c	/^float error_sum = 0;$/;"	v
+eular	.\imu_data_decode.c	/^static float eular[3];$/;"	v	file:
+fputc	.\usart.c	/^int fputc(int ch, FILE *f)$/;"	f
+get_eular	.\imu_data_decode.c	/^int get_eular(float* e)$/;"	f
+get_id	.\imu_data_decode.c	/^int get_id(uint8_t *user_id)$/;"	f
+get_quat	.\imu_data_decode.c	/^int get_quat(float* q)$/;"	f
+get_raw_acc	.\imu_data_decode.c	/^int get_raw_acc(int16_t* a)$/;"	f
+get_raw_gyo	.\imu_data_decode.c	/^int get_raw_gyo(int16_t* g)$/;"	f
+get_raw_mag	.\imu_data_decode.c	/^int get_raw_mag(int16_t* m)$/;"	f
+gyo	.\imu_data_decode.c	/^static int16_t gyo[3];$/;"	v	file:
+id	.\imu_data_decode.c	/^static uint8_t id;$/;"	v	file:
+idtype	.\SST25VF016B.h	/^typedef enum IDTYPE{Manu_ID,Dev_ID,Jedec_ID} idtype;$/;"	t	typeref:enum:IDTYPE
+imu_data_decode_init	.\imu_data_decode.c	/^int imu_data_decode_init(void)$/;"	f
+kItemAccCalibrated	.\packet.h	/^    kItemAccCalibrated =        0xA1,$/;"	e	enum:__anon1
+kItemAccFiltered	.\packet.h	/^    kItemAccFiltered =          0xA2,   $/;"	e	enum:__anon1
+kItemAccLinear	.\packet.h	/^    kItemAccLinear =            0xA5,$/;"	e	enum:__anon1
+kItemAccRaw	.\packet.h	/^    kItemAccRaw =               0xA0,   \/* raw acc              size: 3x2 *\/$/;"	e	enum:__anon1
+kItemEnd	.\packet.h	/^    kItemEnd =                  0x00,   $/;"	e	enum:__anon1
+kItemGyoCalibrated	.\packet.h	/^    kItemGyoCalibrated =        0xB1,$/;"	e	enum:__anon1
+kItemGyoFiltered	.\packet.h	/^    kItemGyoFiltered =          0xB2, $/;"	e	enum:__anon1
+kItemGyoRaw	.\packet.h	/^    kItemGyoRaw =               0xB0,   \/* raw gyro             size: 3x2 *\/  $/;"	e	enum:__anon1
+kItemID	.\packet.h	/^    kItemID =                   0x90,   \/* user programed ID    size: 1 *\/$/;"	e	enum:__anon1
+kItemIPAdress	.\packet.h	/^    kItemIPAdress =             0x92,   \/* ip address           size: 4 *\/$/;"	e	enum:__anon1
+kItemKeyStatus	.\packet.h	/^    kItemKeyStatus =            0x80,   \/* key status           size: 4 *\/$/;"	e	enum:__anon1
+kItemMagCalibrated	.\packet.h	/^    kItemMagCalibrated =        0xC1,$/;"	e	enum:__anon1
+kItemMagFiltered	.\packet.h	/^    kItemMagFiltered =          0xC2,$/;"	e	enum:__anon1
+kItemMagRaw	.\packet.h	/^    kItemMagRaw =               0xC0,   \/* raw mag              size: 3x2 *\/$/;"	e	enum:__anon1
+kItemPressure	.\packet.h	/^    kItemPressure =             0xF0,   \/* pressure             size:1x4 *\/$/;"	e	enum:__anon1
+kItemRotationEular	.\packet.h	/^    kItemRotationEular =        0xD0,   \/* eular angle          size:3x2 *\/$/;"	e	enum:__anon1
+kItemRotationEular2	.\packet.h	/^    kItemRotationEular2 =       0xD9,   \/* new eular angle      size:3x4 *\/$/;"	e	enum:__anon1
+kItemRotationQuat	.\packet.h	/^    kItemRotationQuat =         0xD1,   \/* att q,               size:4x4 *\/$/;"	e	enum:__anon1
+kItemTemperature	.\packet.h	/^    kItemTemperature =          0xE0,   $/;"	e	enum:__anon1
+kItemUID	.\packet.h	/^    kItemUID =                  0x91,   \/* Unique ID            size: 4 *\/$/;"	e	enum:__anon1
+kStatus_CRCHigh	.\packet.c	/^    kStatus_CRCHigh,$/;"	e	enum:status	file:
+kStatus_CRCLow	.\packet.c	/^    kStatus_CRCLow,$/;"	e	enum:status	file:
+kStatus_Cmd	.\packet.c	/^    kStatus_Cmd,$/;"	e	enum:status	file:
+kStatus_Data	.\packet.c	/^    kStatus_Data,$/;"	e	enum:status	file:
+kStatus_Idle	.\packet.c	/^    kStatus_Idle,$/;"	e	enum:status	file:
+kStatus_LenHigh	.\packet.c	/^    kStatus_LenHigh,$/;"	e	enum:status	file:
+kStatus_LenLow	.\packet.c	/^    kStatus_LenLow,$/;"	e	enum:status	file:
+ledflag	.\rtc.c	/^u8 ledflag=0;$/;"	v
+len	.\packet.h	/^    uint16_t len;                   \/* total frame len *\/$/;"	m	struct:__anon2
+mag	.\imu_data_decode.c	/^static int16_t mag[3];$/;"	v	file:
+motion	.\motor.c	/^unsigned int motion=0;$/;"	v
+number	.\motor.c	/^unsigned int number=0;$/;"	v
+ofs	.\packet.h	/^    uint32_t ofs;$/;"	m	struct:__anon2
+payload_len	.\packet.h	/^    uint16_t payload_len;           $/;"	m	struct:__anon2
+quat	.\imu_data_decode.c	/^static float quat[4];$/;"	v	file:
+rotorD1	.\motor.c	/^const uint8_t rotorD1[4] = {60,60,60,60};$/;"	v
+rotorD2	.\motor.c	/^const uint8_t rotorD2[4] = {120,120,120,120};$/;"	v
+sliding_para	.\slidingmode.c	/^SLiding_Para sliding_para;$/;"	v
+spacecontrol1	.\slidingmode.c	/^void  spacecontrol1(void)$/;"	f
+spacecontrol2	.\slidingmode.c	/^void  spacecontrol2(void)$/;"	f
+speed	.\motor.c	/^unsigned int speed=0;$/;"	v
+status	.\packet.c	/^enum status$/;"	g	file:
+tt	.\slidingmode.c	/^volatile float u=0,w=0,x=0,z=0,tt=0;$/;"	v
+type	.\packet.h	/^    uint8_t type;$/;"	m	struct:__anon2
+u	.\slidingmode.c	/^volatile float u=0,w=0,x=0,z=0,tt=0;$/;"	v
+uAD_Buff_A	.\adc.c	/^uint16_t uAD_Buff_A = 0;$/;"	v
+uAD_Buff_B	.\adc.c	/^uint16_t uAD_Buff_B = 0;$/;"	v
+w	.\slidingmode.c	/^volatile float u=0,w=0,x=0,z=0,tt=0;$/;"	v
+x	.\slidingmode.c	/^volatile float u=0,w=0,x=0,z=0,tt=0;$/;"	v
+z	.\slidingmode.c	/^volatile float u=0,w=0,x=0,z=0,tt=0;$/;"	v
