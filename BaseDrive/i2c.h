@@ -4,7 +4,7 @@
 /* Private define ------------------------------------------------------------*/
 #define SCL_H        GPIO_SetBits(GPIOB , GPIO_Pin_6) /*  GPIOB->BSRR = GPIO_Pin_6	   */
 #define SCL_L        GPIO_ResetBits(GPIOB , GPIO_Pin_6)/*GPIOB->BRR  = GPIO_Pin_6  */
-   
+
 #define SDA_H        GPIO_SetBits(GPIOB , GPIO_Pin_7)  /* GPIOB->BSRR = GPIO_Pin_7 */
 #define SDA_L        GPIO_ResetBits(GPIOB , GPIO_Pin_7)	 /*  GPIOB->BRR  = GPIO_Pin_7 */
 
@@ -27,6 +27,6 @@ uint8_t I2C_Test(void);
 #endif
 
 /*********************************************************************************************************
-** End of File
-*********************************************************************************************************/
+ ** End of File
+ *********************************************************************************************************/
 

@@ -10,7 +10,7 @@ float Quat[4];
 int32_t Pressure;
 
 
-
+uint8_t gl_GPSInf[10] = {0,0,0,0,0,0,0,0,0,0};
 uint16_t gl_jsflag[5] = {0,0,0,0,0};
 char Depth_Buff[20]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 uint8_t gl_flag = 0;
@@ -42,27 +42,23 @@ uint16_t Last_AUV_State = 1;
 
 int main(void)
 {
-	SystemInitUser();
-	
-
-	
-
-//	Test();
-//	while(1){}
+        SystemInitUser();
+        //	Test();
+        //	while(1){}
 
 
-		
-	
-  while (1)
-  {
-		DataInter_AHRS();
-		DataInter_Pc();
-		if(AUV_State != 1)
-		{
-			Motion_Control();
-		}
 
-  }
+        while (1)
+        {
+                DataInter_GPS(); 
+                DataInter_AHRS();
+                DataInter_Pc();
+                if(AUV_State != 1)
+                {
+                        Motion_Control();
+                }
+
+        }
 }
 
 

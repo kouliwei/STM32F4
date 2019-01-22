@@ -21,6 +21,7 @@ extern uint16_t EPwmRead(uint8_t i);
 
 extern void EPwm_Init(void);
 void Timer_Init(void);
+void Timer7_Init(void);
 
 
 #endif

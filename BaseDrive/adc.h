@@ -1,19 +1,9 @@
-/*
- * USER_ADC.h
- *
- *  Created on: 2017-9-18
- *      Author: koukou
- */
+/* * USER_ADC.h * *  Created on: 2017-9-18 *      Author: koukou */ 
+#ifndef ADC_H_ 
+#define ADC_H_ 
+#include "user.h" 
 
-#ifndef ADC_H_
-#define ADC_H_
-
-
-#include "user.h"
-
-
-
-extern uint8_t  Voltage[4];
+extern uint8_t  Voltage[5];
 extern uint16_t uAD_Buff_A;
 extern uint16_t uAD_Buff_B;
 

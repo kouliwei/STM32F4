@@ -1,4 +1,3 @@
-
 #include "usart.h"
 #ifdef __GNUC__
 /* With GCC/RAISONANCE, small printf (option LD Linker->Libraries->Small printf
@@ -8,7 +7,8 @@
 #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
 #endif /* __GNUC__ */
 uint16_t USART3_RX_STA = 0;
-uint8_t USART3_Buff[USART3_MAX_LEN]; 
+uint8_t USART3_RX_BUF[USART3_MAX_LEN]; 
+uint8_t USART3_TempBUF[USART3_MAX_LEN]; 
 //#if DEBUG != 0
 ////????????
 ////A5 5A 12 A1 08 83 80 43 06 9A 80 03 01 50 27 3E 02 41 1D AA
@@ -144,9 +144,9 @@ extern void Sci_Init()
         Scia_Init();
         Scib_Init();
         Scic_Init();
-        SciGPS_Init();
+        SciGPS_Init(115200);
 }
-static void SciGPS_Init(void)
+void SciGPS_Init(u32 bound )
 {
         GPIO_InitTypeDef GPIO_InitStructure;	
         USART_InitTypeDef USART_InitStructure;  //?????????
@@ -169,7 +169,7 @@ static void SciGPS_Init(void)
         GPIO_PinAFConfig(GPIOD,GPIO_PinSource8,GPIO_AF_USART3);
         GPIO_PinAFConfig(GPIOD,GPIO_PinSource9,GPIO_AF_USART3);
         /*????????*/
-        USART_InitStructure.USART_BaudRate = USART_Baud; //???
+        USART_InitStructure.USART_BaudRate = bound; //???
         USART_InitStructure.USART_WordLength = USART_WordLength_8b; //???8?
         USART_InitStructure.USART_StopBits = USART_StopBits_1;	//???1?
         USART_InitStructure.USART_Parity = USART_Parity_No;		//??? ?
@@ -179,6 +179,8 @@ static void SciGPS_Init(void)
         USART_ITConfig(USART3, USART_IT_RXNE, ENABLE);
         USART_ClearITPendingBit(USART3, USART_IT_RXNE);
         USART_Cmd(USART3, ENABLE);
+        USART3_RX_STA = 0;
+        TIM_Cmd(TIM7,DISABLE); 
 }
 static void Scid_Init(void)
 {
@@ -416,13 +418,24 @@ void USART3_IRQHandler(void)
         uint8_t res;
         if(USART_GetFlagStatus(USART3,USART_FLAG_RXNE) == SET )
         {
-                res  = USART_ReceiveData(UART3);
-                if (USART3_RX_STA & (1<<15) == 0 )
-                {
-                        TIM7->CR1 = 0;
-                        if() 
+                res  = USART_ReceiveData(USART3);
+                USART_ClearFlag(USART3, USART_FLAG_RXNE);
+                if((USART3_RX_STA&(1<<15))==0)//接收完的一批数据,还没有被处理,则不再接收其他数据
+                { 
+                        if(USART3_RX_STA<USART3_MAX_LEN)	//还可以接收数据
+                        {
+                                TIM_SetCounter(TIM7,0); 
+                                if(USART3_RX_STA==0) 				//使能定时器7的中断 
+                                {
+                                        TIM_Cmd(TIM7, ENABLE); 
+                                }
+                                USART3_RX_BUF[USART3_RX_STA++]=res;	//记录接收到的值	 
+                        }else 
+                        {
+                                USART3_RX_STA|=1<<15;				//强制标记接收完成
+                        } 
                 }  
-        }  
+        }
 }  
 // depth communication
 void UART4_IRQHandler(void)

@@ -56,6 +56,11 @@ void NVIC_Config(void)
         NVIC_InitStructure.NVIC_IRQChannelSubPriority=0x03; 
         NVIC_InitStructure.NVIC_IRQChannelCmd=ENABLE;
         NVIC_Init(&NVIC_InitStructure);
+        NVIC_InitStructure.NVIC_IRQChannel=TIM7_IRQn; 
+        NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=0x02; 
+        NVIC_InitStructure.NVIC_IRQChannelSubPriority=0x00; 
+        NVIC_InitStructure.NVIC_IRQChannelCmd=ENABLE;
+        NVIC_Init(&NVIC_InitStructure);
         //	NVIC_InitStructure.NVIC_IRQChannel = DMA2_Stream0_IRQn;  
         //	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=1;  
         //	NVIC_InitStructure.NVIC_IRQChannelSubPriority =1;        
