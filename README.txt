@@ -46,6 +46,15 @@ User can test some basic functions such as Led, motor according to usart data.
 
 
 
+
+DataInter_AHRS()
+---------------------------------------------------------------------------------
+imu sensor data receive function
+AHRS_RX_Flag : 
+GPS_Analysis(&gpsx, (u8 *)USART3_TempBUF):                 --> analyse the information in the USART3_TempBUF
+--------------------------------------------------------------------------------
+
+
 DataInter_AHRS()
 ---------------------------------------------------------------------------------
 imu sensor data receive function
