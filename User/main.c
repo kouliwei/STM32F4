@@ -43,8 +43,8 @@ uint16_t Last_AUV_State = 1;
 int main(void)
 {
         SystemInitUser();
-        //	Test();
-        //	while(1){}
+        Test();
+        while(1){}
 
 
 
